@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Stop all containers
-docker-compose down
+docker compose down
 
 # Remove all stopped containers
 docker rm $(docker ps -a -q) 2>/dev/null || true
